@@ -6,12 +6,12 @@ attr_accessor :name, :continent, :continent, :capital, :language, :population, :
 def initialize(country)
 @name = country[:name]
 @continent = country[:region]
-@language = country[:languages].join(", ")
+@language = country[:languages][0][:name]
 @capital = country[:capital]
 @population = country[:population]
 @native_name = country[:nativeName]
 @subregion = country[:subregion]
-@currency = country[:currencies].join(",")
+@currency = country[:currencies][0][:name]
 @@all << self
 end
 

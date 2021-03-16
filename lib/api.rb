@@ -1,18 +1,19 @@
 class API
 
 def self.create_country
-url = URI("https://restcountries-v1.p.rapidapi.com/all")
+# url = URI("https://restcountries-v1.p.rapidapi.com/all")
 
-http = Net::HTTP.new(url.host, url.port)
-http.use_ssl = true
-http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+# http = Net::HTTP.new(url.host, url.port)
+# http.use_ssl = true
+# http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
-request = Net::HTTP::Get.new(url)
-request["x-rapidapi-key"] = '63d21f711cmshabebeea8db2f824p1e8794jsn6066c0793ff2'
-request["x-rapidapi-host"] = 'restcountries-v1.p.rapidapi.com'
-response = http.request(request)
+# request = Net::HTTP::Get.new(url)
+# request["x-rapidapi-key"] = '63d21f711cmshabebeea8db2f824p1e8794jsn6066c0793ff2'
+# request["x-rapidapi-host"] = 'restcountries-v1.p.rapidapi.com'
+# response = http.request(request)
+response = RestClient.get('https://restcountries.eu/rest/v2/all')
 country_details_array = JSON.parse(response.body, symbolize_names: true)
-
+# binding.pry
 country_details_array.collect do |country|
     Country.new(country)
     #  binding.pry
