@@ -1,13 +1,16 @@
 class CLI
 
 def run
-    
+    puts " "
     puts "Welcome to the Country Selector".colorize(:red)
     puts "The World is At Your Fingertips!".colorize(:red)
-    sleep 2
+    Country.ASCCI
+    # sleep 2
     API.create_country
-    list_countries
-    menu
+   sleep 1.5
+    start
+    # list_countries
+    # menu
     
 end
 
@@ -30,6 +33,20 @@ def menu
         select_other_country
     end
 end
+
+def start
+puts "Press 'y' to begin or 'n' to exit the program".colorize(:red)
+input = gets.chomp
+if input.downcase == "y"
+    list_countries
+    menu
+elsif input.downcase == "n"
+    exit_program
+else
+    start
+end
+end
+
 
 def select_other_country
 puts "-----------------------------------------"
@@ -61,8 +78,8 @@ end
 
 def exit_program
     puts "Goodbye! Come back soon!".colorize(:light_magenta)
-    Country.ASCCI
     exit!
+    Country.ASCCI
 end
 
 
