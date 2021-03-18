@@ -7,7 +7,7 @@ def run
     Country.ASCCI
     # sleep 2
     API.create_country
-   sleep 1.5
+    # sleep 
     start
     # list_countries
     # menu
@@ -21,6 +21,7 @@ def list_countries
 end
 
 def menu
+    sleep 1
     puts "-----------------------------------------"
     puts "Please select a number between 1 and #{Country.all.size} to see more information:".colorize(:red)
     input = gets.chomp
@@ -28,8 +29,9 @@ def menu
         menu
     else
         country = Country.all[input.to_i-1].name
+       sleep 1
         Country.country_details(country)
-       sleep 1.5
+       sleep 1
         select_other_country
     end
 end
@@ -38,6 +40,7 @@ def start
 puts "Press 'y' to begin or 'n' to exit the program".colorize(:red)
 input = gets.chomp
 if input.downcase == "y"
+    sleep 1
     list_countries
     menu
 elsif input.downcase == "n"
@@ -63,8 +66,8 @@ end
 end
 
 def want_list
-puts "-----------------------------------------"
-puts "Would you like to see a list of countries? y/n".colorize(:red)
+puts " "
+puts "Would you like to see a list of countries? y/n".colorize(:yellow)
 input = gets.chomp
 if input.downcase == "y"
     list_countries
