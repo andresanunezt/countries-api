@@ -23,8 +23,9 @@ def self.country_details(country)
 
     Country.all.each do |countries|
         if country == countries.name && countries.continent == "Americas"
-        puts "#{countries.name}".colorize(:light_magenta)
         puts "-----------------------------------------"
+        puts "#{countries.name}".colorize(:light_magenta)
+        puts " "
         puts "#{countries.name} is a country in the #{countries.continent}. It has a population of #{countries.population}.".colorize(:green)
         puts "Details: ".colorize(:light_magenta)
         puts "Language: #{countries.language}".colorize(:green)
@@ -33,8 +34,9 @@ def self.country_details(country)
         puts "Region: #{countries.subregion}".colorize(:green)
         puts "Currency: #{countries.currency}".colorize(:green)
         elsif country == countries.name && countries.continent != "Americas"
+            puts puts "-----------------------------------------"
             puts "#{countries.name}".colorize(:light_magenta)
-            puts "-----------------------------------------"
+            puts " "
             puts "#{countries.name} is a country in #{countries.continent}. It has a population of #{countries.population}.".colorize(:green)
             puts "Details: ".colorize(:light_magenta)
             puts "Language: #{countries.language}".colorize(:green)
