@@ -63,9 +63,5 @@ def exit_program
     exit!
 end
 
-class InputError < StandardError
-
-end
-
 
 end
