@@ -1,9 +1,8 @@
 #!/usr/bin/env ruby
 
 require 'rest-client'
-require 'uri'
-require 'net/http'
-require 'openssl'
+# require 'uri'
+# require 'net/http'
 require 'json'
 require 'colorize'
 require 'pry'

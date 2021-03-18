@@ -23,34 +23,40 @@ def menu
         menu
     else
         country = Country.all[input.to_i-1].name
-        API.country_details(country)
+        Country.country_details(country)
+       sleep 1.5
         select_other_country
     end
 end
 
 def select_other_country
-puts "Would you like to slect another country? y/n ".colorize(:red)
+puts "Would you like to select another country? y/n ".colorize(:red)
 input = gets.chomp
 
 if input.downcase == "y"
     want_list
 elsif input.downcase == "n"
     exit_program
+else
+    select_other_country
 end
 end
 
 def want_list
-puts "Would you like to see a list of countries? y/n"
+puts "Would you like to see a list of countries? y/n".colorize(:red)
 input = gets.chomp
 if input.downcase == "y"
     list_countries
     menu
 elsif input.downcase == "n"
     menu
+else
+    want_list
 end
 end
 
 def exit_program
+    puts "Goodbye! Come back soon!".colorize(:light_magenta)
     exit!
 end
 
