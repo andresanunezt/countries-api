@@ -1,6 +1,6 @@
 # Countries-Api
 Welcome to the Countries API CLI.
-This CLI allows the user to select a country from a list and view infortion about the country, such as population, capital and language spoken.
+This CLI allows the user to select a country from a list and view more information on it, such as population, capital and language spoken.
 
 All information is pulled from the REST countries api.
 (http://restcountries.eu/#api-endpoints-all)

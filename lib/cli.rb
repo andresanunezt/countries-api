@@ -1,9 +1,10 @@
 class CLI
 
 def run
+    
     puts "Welcome to the Country Selector".colorize(:red)
     puts "The World is At Your Fingertips!".colorize(:red)
-    sleep 1.5
+    sleep 2
     API.create_country
     list_countries
     menu
@@ -60,6 +61,7 @@ end
 
 def exit_program
     puts "Goodbye! Come back soon!".colorize(:light_magenta)
+    Country.ASCCI
     exit!
 end
 
