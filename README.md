@@ -11,7 +11,9 @@ All information is pulled from the REST countries api(http://restcountries.eu/#a
 Make sure you have the following Gems installed:
 
 'rest-client'
+
 'json'
+
 'colorize'
 
 With Ruby already installed on your computer and with the appropaite gems, it is as simple as forking and cloning this repository to your local enviornment.
