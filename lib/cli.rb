@@ -17,6 +17,7 @@ def list_countries
 end
 
 def menu
+    puts "-----------------------------------------"
     puts "Please select a number between 1 and #{Country.all.size} to see more information:".colorize(:red)
     input = gets.chomp
     if !input.to_i.between?(1, Country.all.count)
@@ -30,6 +31,7 @@ def menu
 end
 
 def select_other_country
+puts "-----------------------------------------"
 puts "Would you like to select another country? y/n ".colorize(:red)
 input = gets.chomp
 
@@ -43,6 +45,7 @@ end
 end
 
 def want_list
+puts "-----------------------------------------"
 puts "Would you like to see a list of countries? y/n".colorize(:red)
 input = gets.chomp
 if input.downcase == "y"
