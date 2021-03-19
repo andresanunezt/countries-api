@@ -61,7 +61,7 @@ puts "
 .. . . . . . ##. . . . . . . . . . . . . . . . . . . . . .
 .. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
     
-Brice Wellington from Winston Smith".colorize(:green)
+".colorize(:green)
 
 puts "-----------------------------------------"
 end

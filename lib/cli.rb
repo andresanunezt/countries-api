@@ -18,11 +18,12 @@ def list_countries
     Country.all.each.with_index(1) do | country, i |
         puts "#{i}. #{country.name}".colorize(:yellow)
     end
+    puts "-----------------------------------------"
 end
 
 def menu
     sleep 1
-    puts "-----------------------------------------"
+    # puts "-----------------------------------------"
     puts "Please select a number between 1 and #{Country.all.size} to see more information:".colorize(:red)
     input = gets.chomp
     if !input.to_i.between?(1, Country.all.count)
@@ -52,8 +53,7 @@ end
 
 
 def select_other_country
-puts "-----------------------------------------"
-puts "Would you like to select another country? y/n ".colorize(:red)
+puts "Would you like to select another country? y/n ".colorize(:light_cyan)
 input = gets.chomp
 
 if input.downcase == "y"
