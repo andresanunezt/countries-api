@@ -7,7 +7,7 @@ All information is pulled from the REST countries api.
 
 
 # Motivation 
-As a child, I would spend hours searching the web and different encyclopedias trying to learn as much as I could about different countries. This is a tribute to my younger self.
+As a child, I would spend hours searching the web and different encyclopedias trying to learn as much as I could about different countries. With this CLI, you can  learn about different cuntries' aspects in seconds.
 
 # Installation
 Make sure you have the following Gems installed:

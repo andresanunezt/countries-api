@@ -5,13 +5,8 @@ def run
     puts "Welcome to the Country Selector".colorize(:red)
     puts "The World is At Your Fingertips!".colorize(:red)
     Country.ASCCI
-    # sleep 2
     API.create_country
-    # sleep 
-    start
-    # list_countries
-    # menu
-    
+    start 
 end
 
 def list_countries
@@ -23,7 +18,6 @@ end
 
 def menu
     sleep 1
-    # puts "-----------------------------------------"
     puts "Please select a number between 1 and #{Country.all.size} to see more information:".colorize(:red)
     input = gets.chomp
     if !input.to_i.between?(1, Country.all.count)
