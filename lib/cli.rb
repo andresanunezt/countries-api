@@ -76,7 +76,7 @@ end
 def exit_program
     puts "Goodbye! Come back soon!".colorize(:light_magenta)
     exit!
-    Country.ASCCI
+    
 end
 
 
