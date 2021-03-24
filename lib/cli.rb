@@ -20,7 +20,7 @@ def menu
     sleep 1
     puts "Please select a number between 1 and #{Country.all.size} to see more information:".colorize(:red)
     input = gets.chomp
-    if !input.to_i.between?(1, Country.all.count)
+    if !input.to_i.between?(1, Country.all.size)
         menu
     else
         country = Country.all[input.to_i-1].name
