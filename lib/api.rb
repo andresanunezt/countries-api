@@ -1,6 +1,6 @@
 class API
 
-def self.create_country
+def self.create_countries
 response = RestClient.get('https://restcountries.eu/rest/v2/all')
 country_details_hash = JSON.parse(response.body, symbolize_names: true)
 country_details_hash.collect do |country|

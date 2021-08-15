@@ -5,7 +5,7 @@ def run
     puts "Welcome to the Country Selector".colorize(:red)
     puts "The World is At Your Fingertips!".colorize(:red)
     world_ASCCI
-    API.create_country
+    API.create_countries
     start 
 end
 
