@@ -5,7 +5,7 @@ This CLI allows the user to select a country from a list and view more informati
 
 All information is pulled from the [REST countries api](http://restcountries.eu/#api-endpoints-all).
 
-[DEMO](https://www.youtube.com/watch?v=nIsbWhFnYFo&t=12s).
+Check out the [DEMO](https://www.youtube.com/watch?v=nIsbWhFnYFo&t=12s).
 
 # Motivation
 
