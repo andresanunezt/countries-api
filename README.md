@@ -3,8 +3,7 @@
 Welcome to the Countries API CLI.
 This CLI allows the user to select a country from a list and view more information on it, such as population, capital and language spoken.
 
-All information is pulled from the REST countries api.
-(http://restcountries.eu/#api-endpoints-all)
+All information is pulled from the [REST countries api](http://restcountries.eu/#api-endpoints-all).
 
 [DEMO](https://www.youtube.com/watch?v=nIsbWhFnYFo&t=12s).
 
@@ -27,10 +26,8 @@ Navigate to the countries-api folder in your terminal and enter "bin/run_world".
 
 # Contributions
 
-Bug reports and pull requests are welcome on GitHub at:
-https://github.com/andresanunezt/countries-api/pulls
+Bug reports and pull requests are welcome on GitHub [here](https://github.com/andresanunezt/countries-api/pulls).
 
 # License
 
-Availible as an open source under the terms of the MIT License availible at:
-https://opensource.org/licenses/MIT
+Availible as an open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
